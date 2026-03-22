@@ -17,7 +17,7 @@ export default function Home() {
       <div className="py-12 lg:py-2 mb-2">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center ">
             <div className="relative">
-              <Image src="/lady.jpg" alt="about" width={600} height={600}
+              <Image src="/hero.png" alt="about" width={600} height={600}
               className="rounded-2xl border border-white/10"
               />
             </div>
