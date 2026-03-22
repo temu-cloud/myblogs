@@ -4,7 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { LuArrowRight } from "react-icons/lu"
  
-const baseUrl="http://localhost:3000"
+const baseUrl="https://myblogs-blush-two.vercel.app/"
 
 export default async function RecentPosts() {
   const res=await fetch(`${ baseUrl}/api/posts/recent`,{
