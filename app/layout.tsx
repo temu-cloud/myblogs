@@ -5,8 +5,10 @@ import Navbar from "./components/general/navbar/Navbar";
 import Footer from "./components/general/Footer";
 import SignInModal from "./components/modals/SignInModal";
 import SearchModal from "./components/modals/SearchModal";
-import {Toaster} from "react-hot-toast"
+import { Toaster } from "react-hot-toast"
 import QueryProvider from "./providers/QueryProvider";
+ 
+
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
@@ -24,16 +26,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${poppins.className} antialiased bg-background`}>
-        <QueryProvider>
-        <Navbar />
-        {children}
-        <Footer/>
-        <SignInModal/>
-        <SearchModal/>
-        <Toaster/>
-        </QueryProvider>
+       
+          <QueryProvider>
+            <Navbar />
+            {children}
+            <Footer />
+            <SignInModal />
+            <SearchModal />
+            <Toaster />
+          </QueryProvider>
+         
+
 
       </body>
     </html>

@@ -22,10 +22,10 @@ export default function Home() {
               />
             </div>
             <div className="max-w-xl">
-               <span className="text-sm uppercase tracking-widest text-indigo-400">
+               <span className="text-sm font-bold tracking-widest text-indigo-400">
                 about myblogs
                </span>
-               <h3 className="mt-3 text-2xl lg:text-3xl xl:text-4xl font-semibold tracking-tight text-secondary-background">
+               <h3 className="mt-3 text-2xl lg:text-3xl xl:text-4xl font-semibold tracking-tight text-white">
                 simple ways to Innovate your Inner Creative Mind
 
                </h3>
