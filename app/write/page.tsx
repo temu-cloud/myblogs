@@ -1,8 +1,10 @@
 "use client";
 import axios from "axios";
 import dynamic from "next/dynamic";
-import { useMemo, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
+import { useEffect, useMemo, useRef, useState } from "react";
 import toast from "react-hot-toast";
+import { authClient } from "@/app/lib/auth-client";
 
 const JoditEditor = dynamic(() => import("jodit-react"), {
   ssr: false,
@@ -15,6 +17,14 @@ export default function WritePage() {
   const [excerpt, setExcerpt] = useState("");
   const [coverImage, setCoverImage] = useState<null | File>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const router = useRouter();
+  const { data: session, isPending } = authClient.useSession();
+
+  useEffect(() => {
+    if (!isPending && (session?.user as { role?: string } | undefined)?.role !== "admin") {
+      router.replace("/articles");
+    }
+  }, [session, isPending, router]);
 
   const config = useMemo(
     () => ({

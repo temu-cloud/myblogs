@@ -68,6 +68,10 @@ export async function PATCH(
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     }
 
+    if ((session.user as { role?: string }).role !== "admin") {
+      return NextResponse.json({ error: "Forbidden" }, { status: 403 });
+    }
+
     const { postId } = await params;
 
     const existingPost = await prisma.post.findUnique({
@@ -159,6 +163,10 @@ export async function DELETE(
 
   if (!session?.user.id) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+
+  if ((session.user as { role?: string }).role !== "admin") {
+    return NextResponse.json({ error: "Forbidden" }, { status: 403 });
   }
 
   const { postId } = await params;

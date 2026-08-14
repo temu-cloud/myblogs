@@ -7,6 +7,7 @@ import { use } from "react";
 import { LuPen  } from "react-icons/lu";
  
 import { authClient } from "@/app/lib/auth-client";
+import CommentsLikes from "./CommentsLikes";
 import DeleteButton from "./DeleteButton";
 
 interface BlogViewProps {
@@ -106,6 +107,8 @@ export default function BlogView({ postPromise }: BlogViewProps) {
           ← Back to all articles
         </Link>
       </div>
+
+      {post?.id && <CommentsLikes postId={post.id} />}
     </article>
   );
 }

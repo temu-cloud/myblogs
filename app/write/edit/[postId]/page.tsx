@@ -1,5 +1,6 @@
 "use client";
 import EditPageSkeleton from "@/app/components/skeletons/EditPageSkeleton";
+import { authClient } from "@/app/lib/auth-client";
 import axios from "axios";
 import dynamic from "next/dynamic";
 import Image from "next/image";
@@ -22,6 +23,13 @@ export default function EditPage() {
   const [loading, setLoading] = useState(true);
   const { postId } = useParams();
   const router = useRouter();
+  const { data: session, isPending } = authClient.useSession();
+
+  useEffect(() => {
+    if (!isPending && (session?.user as { role?: string } | undefined)?.role !== "admin") {
+      router.replace("/articles");
+    }
+  }, [session, isPending, router]);
 
   const config = useMemo(
     () => ({

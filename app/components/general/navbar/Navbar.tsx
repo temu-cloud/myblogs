@@ -32,7 +32,7 @@ export default function Navbar() {
                         <LuSearch size={25} /> <span className="hidden md:block">search</span>
                     </li>
                     {
-                        session && (
+                        session?.user && (session.user as { role?: string }).role === "admin" && (
                             <Link href="/write" className="flex items-center cursor-pointer gap-1 hover:text-indigo-400">
                                 <li className="flex gap-1.5">
                                     <LuNotebookPen size={20} /> <span className="hidden md:block">write</span>
