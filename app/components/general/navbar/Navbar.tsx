@@ -10,8 +10,8 @@ import { authClient } from "@/app/lib/auth-client";
 
 export const navlinks = [
     { url: "/", label: "Home" },
-    { url: "/articles", label: "Articles" },
-    { url: "/about", label: "About" },
+    { url: "/articles", label: "Projects" },
+    { url: "/about", label: "About me" },
 ]
 
 
@@ -35,7 +35,7 @@ export default function Navbar() {
                         session?.user && (session.user as { role?: string }).role === "admin" && (
                             <Link href="/write" className="flex items-center cursor-pointer gap-1 hover:text-indigo-400">
                                 <li className="flex gap-1.5">
-                                    <LuNotebookPen size={20} /> <span className="hidden md:block">write</span>
+                                    <LuNotebookPen size={20} /> <span className="hidden md:block">post</span>
                                 </li>
                             </Link>
                         )

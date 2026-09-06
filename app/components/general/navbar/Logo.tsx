@@ -3,7 +3,7 @@
 export default function Logo() {
   return (
       <Link href="/" className="text-amber-50 font-bold text-xl md:text-2xl lg:text-3xl">
-           My <span className="text-primary">blog</span>
+           Temu <span className="text-primary">folio</span>
            </Link> 
   )
 }

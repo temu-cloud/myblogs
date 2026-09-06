@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <ContainerLayout>
       <h1 className="text-3xl lg:text-5xl xl:text-7xl text-center text-white tracking-wide leading-snug lg:leading-tight ">
-        <span className="font-bold">well come to myblog website   </span><br />
+        <span className="font-bold">well come to myportfolio website   </span><br />
         Discover Stories and Creative Ideas!
         </h1>
       
@@ -22,19 +22,17 @@ export default function Home() {
               />
             </div>
             <div className="max-w-xl">
-               <span className="text-sm font-bold tracking-widest text-indigo-400">
-                about myblogs
-               </span>
+                
                <h3 className="mt-3 text-2xl lg:text-3xl xl:text-4xl font-semibold tracking-tight text-white">
-                simple ways to Innovate your Inner Creative Mind
+                 who am I ?
 
                </h3>
                <p className="mt-6 text-gray-400 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, velit repellat numquam facilis est aut porro voluptate nostrum mollitia id, natus ut a ab deserunt omnis voluptatum minima temporibus quis.
+                I’m Temesgen Molla, a Computer Engineering graduate from University of Gondar and passionate software developer focused on building practical, user-friendly, and scalable digital solutions. I enjoy turning real-world problems into modern web applications using technologies such as React, Next.js, Node.js, Django, and databases. I’m continuously improving my skills in software development, IT systems, and emerging technologies while building solutions that create real value
                </p>
                <div className="mt-2"  >
                 <Link href="/about" className="inline-flex items-center gap-2 px-7 py-3 rounded-xl bg-primary text-amber-50 font-semibold hover:bg-amber-50 hover:text-primary transition-colors">
-                Learn More
+                 More about me
                 <LuArrowRight size={15}/>
                 </Link>
                </div>
