@@ -41,8 +41,8 @@ export default function AboutPage() {
             <div className='text-center'>
               <h2 className='text-2xl font-semibold text-gray-200 mb-4'>CONTACT ME</h2>
               <p className='font-semibold text-gray-200 mb-4'>let`s take more</p>
-              <Link href="/@temesgenML" className='inline-flex items-center justify-center px-6 py-3 rounded-full bg-indigo-400 hover:bg-indigo-700 transition-colors text-white font-semibold'>Telegram</Link>
-              <Link href="/@temesgenML" className='inline-flex items-center justify-center px-6 py-3 rounded-full bg-indigo-400 hover:bg-indigo-700 transition-colors text-white font-semibold'>LinkedIn</Link>
+              <Link href="https://t.me/temesgenML" className='inline-flex items-center justify-center px-6 py-3 rounded-full bg-indigo-400 hover:bg-indigo-700 transition-colors text-white font-semibold'>Telegram</Link>
+              <Link href="https://www.linkedin.com/in/temesgen-molla-4265513a1" className='inline-flex items-center justify-center px-6 py-3 rounded-full bg-indigo-400 hover:bg-indigo-700 transition-colors text-white font-semibold'>LinkedIn</Link>
             </div>
           </div>
 
