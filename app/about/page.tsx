@@ -39,7 +39,17 @@ export default function AboutPage() {
           <div className="relative group">
             <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-indigo-600/30 to-purple-600/10 blur-xl opacity-60 group-hover:opacity-90 transition duration-500" />
             <Image
-              src="/me.jpg"
+              src="/tempo.jpg"
+              alt="Temesgen Molla"
+              height={500}
+              width={500}
+              className="relative rounded-2xl border border-white/10 w-full object-cover"
+            />
+          </div>
+          <div className="relative group">
+            <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-indigo-600/30 to-purple-600/10 blur-xl opacity-60 group-hover:opacity-90 transition duration-500" />
+            <Image
+              src="/award.jpg"
               alt="Temesgen Molla"
               height={500}
               width={500}

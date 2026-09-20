@@ -26,9 +26,7 @@ export default async function RecentPosts() {
 
   return (
     <div className="space-y-2">
-      <h1 className="text-amber-50 text-xl sm:text-2xl md:text-3xl font-semibold">
-        Recent Posts
-      </h1>
+       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {posts.map((post) => (
           <div
