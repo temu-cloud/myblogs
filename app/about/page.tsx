@@ -59,7 +59,7 @@ export default function AboutPage() {
            <div className="relative group">
             <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-indigo-600/30 to-purple-600/10 blur-xl opacity-60 group-hover:opacity-90 transition duration-500" />
             <Image
-              src="/ph(2).png"
+              src="/tm.jpg"
               alt="Temesgen Molla"
               height={500}
               width={500}
