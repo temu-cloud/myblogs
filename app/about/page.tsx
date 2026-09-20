@@ -39,7 +39,7 @@ export default function AboutPage() {
           <div className="relative group">
             <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-indigo-600/30 to-purple-600/10 blur-xl opacity-60 group-hover:opacity-90 transition duration-500" />
             <Image
-              src="/tempo.jpg"
+              src="/tempo.JPG"
               alt="Temesgen Molla"
               height={500}
               width={500}
@@ -49,14 +49,23 @@ export default function AboutPage() {
           <div className="relative group">
             <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-indigo-600/30 to-purple-600/10 blur-xl opacity-60 group-hover:opacity-90 transition duration-500" />
             <Image
-              src="/award.jpg"
+              src="/award.JPG"
               alt="Temesgen Molla"
               height={500}
               width={500}
               className="relative rounded-2xl border border-white/10 w-full object-cover"
             />
           </div>
-
+           <div className="relative group">
+            <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-indigo-600/30 to-purple-600/10 blur-xl opacity-60 group-hover:opacity-90 transition duration-500" />
+            <Image
+              src="/ph(2).png"
+              alt="Temesgen Molla"
+              height={500}
+              width={500}
+              className="relative rounded-2xl border border-white/10 w-full object-cover"
+            />
+          </div>
           <div>
             <h2 className="text-2xl font-bold text-white mb-4">My journey</h2>
             <p className="text-gray-400 leading-relaxed mb-4">
