@@ -1,12 +1,63 @@
 @import "tailwindcss";
 
- @theme{
-  --color-primary:#1e3a8a;
-  --color-background:#0f172a;
-  --color-secondary-background:#1e293b;
-  --color-hover:#181818;
- }
+@theme {
+  --color-primary: #1e3a8a;
+  --color-background: #0f172a;
+  --color-secondary-background: #1e293b;
+  --color-hover: #181818;
+}
 
- 
+/* Gradient text utility */
+.gradient-text {
+  background: linear-gradient(135deg, #fff 0%, #a5b4fc 50%, #818cf8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 
- 
+/* Glow effect for cards */
+.card-glow {
+  box-shadow: 0 0 0 1px rgba(99, 102, 241, 0.1), 0 4px 24px rgba(0, 0, 0, 0.4);
+}
+.card-glow:hover {
+  box-shadow: 0 0 0 1px rgba(99, 102, 241, 0.3), 0 8px 32px rgba(99, 102, 241, 0.15);
+}
+
+/* Blog post content styles */
+.blog-post h1, .blog-post h2, .blog-post h3 {
+  color: #f1f5f9;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.blog-post p { color: #94a3b8; line-height: 1.8; margin-bottom: 1.25rem; }
+.blog-post a { color: #818cf8; text-decoration: underline; }
+.blog-post code {
+  background: #1e293b;
+  color: #a5b4fc;
+  padding: 0.15em 0.4em;
+  border-radius: 0.25rem;
+  font-size: 0.875em;
+}
+.blog-post pre {
+  background: #1e293b;
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+.blog-post blockquote {
+  border-left: 3px solid #4f46e5;
+  padding-left: 1rem;
+  color: #94a3b8;
+  font-style: italic;
+  margin: 1.5rem 0;
+}
+.blog-post ul, .blog-post ol {
+  color: #94a3b8;
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+.blog-post li { margin-bottom: 0.5rem; }
+.blog-post img { border-radius: 0.75rem; max-width: 100%; }
